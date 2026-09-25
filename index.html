@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Science Department</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">CS<span>Dept</span></div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="tag">COMPUTER SCIENCE DEPARTMENT</p>
+
+        <h1>
+          Build Your Future<br>
+          With <span>Technology</span>
+        </h1>
+
+        <p class="hero-text">
+          Learn programming, artificial intelligence, cybersecurity,
+          web development and modern technologies with us.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#courses" class="btn primary">Explore Courses</a>
+          <a href="#about" class="btn secondary">Learn More</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="code-box">
+          <span class="pink">const</span>
+          <span class="white">student</span> = {
+          <br>
+          &nbsp;&nbsp;name: <span class="green">"Future Developer"</span>,
+          <br>
+          &nbsp;&nbsp;skills: [<span class="green">"HTML"</span>,
+          <span class="green">"CSS"</span>,
+          <span class="green">"JS"</span>],
+          <br>
+          &nbsp;&nbsp;passion: <span class="green">"Technology"</span>
+          <br>
+          };
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section-title">
+        <p>WHO WE ARE</p>
+        <h2>About Our Department</h2>
+      </div>
+
+      <div class="about-content">
+        <div>
+          <h3>Learn. Create. Innovate.</h3>
+          <p>
+            Our Computer Science department provides students with
+            strong technical knowledge and practical experience.
+            We focus on programming, software development, data science,
+            artificial intelligence and emerging technologies.
+          </p>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>500+</h3>
+            <p>Students</p>
+          </div>
+
+          <div class="stat">
+            <h3>25+</h3>
+            <p>Faculty</p>
+          </div>
+
+          <div class="stat">
+            <h3>15+</h3>
+            <p>Labs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="section courses" id="courses">
+      <div class="section-title">
+        <p>WHAT WE OFFER</p>
+        <h2>Popular Courses</h2>
+      </div>
+
+      <div class="course-container">
+
+        <div class="course-card">
+          <div class="icon">💻</div>
+          <h3>Web Development</h3>
+          <p>
+            Learn HTML, CSS, JavaScript and modern web technologies.
+          </p>
+          <a href="#">Read More →</a>
+        </div>
+
+        <div class="course-card">
+          <div class="icon">🤖</div>
+          <h3>Artificial Intelligence</h3>
+          <p>
+            Explore machine learning, AI concepts and intelligent systems.
+          </p>
+          <a href="#">Read More →</a>
+        </div>
+
+        <div class="course-card">
+          <div class="icon">🔐</div>
+          <h3>Cyber Security</h3>
+          <p>
+            Understand network security, ethical hacking and data protection.
+          </p>
+          <a href="#">Read More →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Faculty -->
+    <section class="section" id="faculty">
+      <div class="section-title">
+        <p>OUR TEAM</p>
+        <h2>Our Faculty</h2>
+      </div>
+
+      <div class="faculty-container">
+
+        <div class="faculty-card">
+          <div class="profile">👨‍🏫</div>
+          <h3>Dr. Arun Kumar</h3>
+          <p>Head of Department</p>
+        </div>
+
+        <div class="faculty-card">
+          <div class="profile">👩‍🏫</div>
+          <h3>Dr. Priya</h3>
+          <p>Associate Professor</p>
+        </div>
+
+        <div class="faculty-card">
+          <div class="profile">👨‍💻</div>
+          <h3>Mr. Rahul</h3>
+          <p>Assistant Professor</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="section-title">
+        <p>GET IN TOUCH</p>
+        <h2>Contact Us</h2>
+      </div>
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button type="submit" class="btn primary">Send Message</button>
+
+        <p id="formMessage"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Computer Science Department. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
